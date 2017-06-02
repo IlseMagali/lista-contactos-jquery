@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de contactos</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <header class="contenedor encabezado">
+      <div class="row">
+        <p>Contactos</p>
+      </div>
+    </header>
+    <!-- Seccion de contador - contactos  -->
+    <section class="contenedor">
+      <span>Total de contactos:</span> <label id="contador-contacto" for=""></label>
+    </section>
+    <!-- Seccion para enlistar contactos -->
+    <section id="contenedor-lista">
+      <article class="contenedor-contacto">
+        <p>Nombre de contacto</p>
+        <p>Apellido de contacto</p>
+        <p>Número de contacto</p>
+      </article>
+    </section>
+    <!--Sección de boton agregar contacto y boton de buscar  -->
+    <section class="area-botones">
+      <button type="button" name="button" class="boton-buscar">Buscar</button>
+      <button type="button" name="button" class="boton-agregar">Agregar</button>
+    </section>
+    <!-- Modal para adquirir los datos del contacto -->
+    <div class="modal-contacto">
+      <section class="datos-contacto">
+        <form id="formularioContacto" action="index.html" method="post">
+          <span>Nombre:</span><input type="text" name="Nombre"> <br>
+          <span>Apellido:</span><input type="text" name="Apellido"> <br>
+          <span>Teléfono:</span><input type="tel" name="Numero"> <br>
+          <button type="submit" name="button" class="modal-boton-agregar">Agregar</button>
+          <button type="button" name="button" class="modal-boton-cancelar">Cancelar</button>
+        </form>
+      </section>
+    </div>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js">
+    </script>
+    <script type="text/javascript" src="assets/js/master.js">
+    </script>
+  </body>
+</html>
